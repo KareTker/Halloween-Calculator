@@ -1,38 +1,115 @@
+
+body {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,184,1) 50%, rgba(252,176,69,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1500px;
+  color: rgb(248, 247, 247);
+  background-size: 600% 100%;
+  animation: gradient 2s linear infinite;
+  animation-direction: alternate;
+  letter-spacing: 3px;
+}
+h1{
+  font-size: 6em;
+  color: rgb(246, 250, 246);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border:dashed 10px rgb(255, 255, 255);
+  border-radius: 4%;
+}
+h1:hover{
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
+
 .App {
+  font-family: sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.calc {
+  max-width: 700px;
+  max-height: 800px;
+  border-radius: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.buttons {
+  display: block;
+  background-color: rgb(26, 24, 24);
+  border-radius: 10%;  
+}
+.buttons button {
+  height: 3em;
+  width: 25%;
+  border-radius: 5%;
+  font-size: 30px;
+  border: 2px solid white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.result {
+  height: 7em;
+  background-color: #262626;
+  width: 100%;
+  color: rgb(103, 191, 226);
+  border-radius: 2%;
+}
+
+.result p {
+  font-size: 40px;
+  padding: 10px;
+  
+}
+
+.icon{
+  font-size: 15em;
+  position:relative; 
+  left:45px; 
+  top: 25px;
+  color: rgb(250, 246, 246);
+}
+.icon:hover{
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
 }
